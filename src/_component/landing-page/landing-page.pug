@@ -1,15 +1,18 @@
 -
     var myFullName = 'Nicolae Valentin'
     var myJobTitle = 'Junior Web Developer'
-    var sociaList = [
-        {icoon: 'value', url:'#'}
-    ]
+    var aboutMe = {
+        title: 'About Me',
+        content: 'I taught myself web development while working a full-time job and it was the greatest adventure ever! I am proud and grateful to be part of the coding community. May the source be with you! (◕‿◕)',
+    }
 
 #landing-page
 .landing-page
     .landing-page__wrapper
     h1.landing-page__name=myFullName
     h2.landing-page__title=myJobTitle
-    p.about I taught myself web development while working a full-time job and it was the greatest adventure ever! I am proud and grateful to be part of the coding community. May the source be with you! (◕‿◕)
+    .about
+        .about-me__title=aboutMe.title
+        .about-me__content=aboutMe.content
 .icofont-brand-youtube
 .icofont-linkedin
